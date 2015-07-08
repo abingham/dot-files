@@ -44,7 +44,13 @@ RPROMPT=$RPROMPT$' $(vcs_info_wrapper)'
 #export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin
 export PATH=/usr/local/bin:$PATH
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH=~/Library/Haskell/bin:$PATH
+
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
