@@ -41,16 +41,18 @@ vcs_info_wrapper() {
 }
 RPROMPT=$RPROMPT$' $(vcs_info_wrapper)'
 
-#export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin
-export PATH=/usr/local/bin:$PATH
+# export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin
+# export PATH=/usr/local/bin:$PATH
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH=~/Library/Haskell/bin:$PATH
+# virtualenvwrapper stuff
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/Devel
+#export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+#source /usr/local/bin/virtualenvwrapper.sh
 
-export GOPATH=~/go
-export PATH=$PATH:$GOPATH/bin
+[[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ '
