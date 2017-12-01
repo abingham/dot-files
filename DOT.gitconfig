@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Austin Bingham
+	email = austin.bingham@gmail.com
+[push]
+	default = simple
+[core]
+	editor = vim
+	pager = less -F -X
+[alias]
+	lg = log --oneline --graph --all --decorate
+[branch]
+	autosetuprebase = always
