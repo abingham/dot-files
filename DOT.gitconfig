@@ -11,3 +11,5 @@
 	lg = log --oneline --graph --all --decorate
 [branch]
 	autosetuprebase = always
+[diff]
+	submodule = log
