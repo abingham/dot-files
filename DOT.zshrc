@@ -106,3 +106,5 @@ fi
 
 # activate the pyenv venvwrapper plugin
 pyenv virtualenvwrapper
+
+unsetopt share_history
