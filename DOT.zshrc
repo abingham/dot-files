@@ -64,7 +64,8 @@ ZSH_THEME="terminalparty"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
-  git
+    docker
+    git
 )
 
 source $ZSH/oh-my-zsh.sh
