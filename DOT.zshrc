@@ -66,7 +66,6 @@ ZSH_THEME="terminalparty"
 plugins=(
     docker
     git
-    pyenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# activate the pyenv venvwrapper plugin
-pyenv virtualenvwrapper
 
 unsetopt share_history
 
