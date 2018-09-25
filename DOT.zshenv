@@ -9,12 +9,13 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework --enable-ipv6 --enable-unicode 
 #export PATH="$PYENV_ROOT/bin:$PATH"
 
 export PATH=$PATH:/usr/local/bin
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-fi
 
-# activate the pyenv venvwrapper plugin
-pyenv virtualenvwrapper
+# Do this *without* rehashing to avoid a) doing it too many times (i.e. on each
+# subprocess invocation) and b) the resulting locking problem. We'll do
+# rehashing on interactive shells.
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init --no-rehash -)"
+fi
 
 # Need to set this for rust to see libgfortran
 export LIBRARY_PATH=/usr/local/Cellar/gcc/8.2.0/lib/gcc/8/

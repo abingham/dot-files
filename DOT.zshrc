@@ -107,3 +107,9 @@ if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/go
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Redo the pyenv hashes (we only do this in interactive shells for performance reasons)
+pyenv rehash
+
+# activate the pyenv venvwrapper plugin
+pyenv virtualenvwrapper
