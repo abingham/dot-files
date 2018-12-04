@@ -1,0 +1,11 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+w cmd+w",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "cmd+w cmd+t",
+        "command": "workbench.action.terminal.focus"
+    }
+]
