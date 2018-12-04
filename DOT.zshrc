@@ -112,4 +112,4 @@ if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/lo
 pyenv rehash
 
 # activate the pyenv venvwrapper plugin
-source `which virtualenvwrapper.sh`
+pyenv virtualenvwrapper 
