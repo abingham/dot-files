@@ -1,8 +1,12 @@
-# Using the directory
+# The `User` directory
 
-This directory should be linked to `~/Library/Application Support/Code/User`.
+This contains the Code user settings. It should be linked to `~/Library/Application Support/Code/User`, something like this:
 
-# Using the extensions
+```
+ln -s ~/repos/dot-files/vscode/User ~/Library/Application\ Support/Code/User
+```
+
+# Using `extensions.list`
 
 The `extensions.list` file is a list of extensions to install into code. You can install them using something like this:
 
