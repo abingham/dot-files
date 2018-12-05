@@ -7,5 +7,9 @@
     {
         "key": "cmd+w cmd+t",
         "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "alt+s",
+        "command": "extension.around",
     }
 ]
