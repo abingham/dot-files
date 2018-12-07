@@ -1,6 +1,11 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
+        "key": "alt+=",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "cmd+w cmd+w",
         "command": "workbench.action.focusNextGroup"
     },

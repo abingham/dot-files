@@ -3,5 +3,10 @@
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "alt"
+    "editor.multiCursorModifier": "alt",
+    "git.confirmSync": false,
+    "python.venvFolders": [
+        ".virtualenvs",
+    ],
+    "python.linting.flake8Args": ["--max-line-length=120"]
 }
