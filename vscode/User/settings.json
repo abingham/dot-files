@@ -1,7 +1,7 @@
 {
     "python.venvPath": "/Users/abingham/.virtualenvs",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 2,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "alt",
     "git.confirmSync": false,
@@ -11,5 +11,14 @@
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
-    "workbench.colorTheme": "Solarized Dark"
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.rendererType": "dom",
+    "python.linting.flake8Enabled": true,
+    "files.associations": {
+        "*.gjenta": "python"
+    },
+    "python.jediEnabled": false,
+    "[elm]": {
+        "editor.formatOnSave": true
+    }
 }
