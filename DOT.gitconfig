@@ -7,7 +7,7 @@
 [core]
 	editor = vim
 	pager = less -F -X
-	excludesfile = /Users/sixtynorth/.gitignore
+	excludesfile = /Users/abingham/.gitignore
 [alias]
 	lg = log --oneline --graph --all --decorate
 [branch]
