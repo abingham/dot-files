@@ -16,5 +16,9 @@
     {
         "key": "alt+s",
         "command": "extension.around",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "center-editor-window.center"
     }
 ]

@@ -3,7 +3,7 @@
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 2,
     "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "alt",
+    "editor.multiCursorModifier": "ctrlCmd",
     "git.confirmSync": false,
     "python.venvFolders": [
         ".virtualenvs",
@@ -20,5 +20,7 @@
     "python.jediEnabled": false,
     "[elm]": {
         "editor.formatOnSave": true
-    }
+    },
+    "explorer.confirmDelete": false,
+    "center-editor-window.threeStateToggle": true
 }
