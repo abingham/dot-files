@@ -22,6 +22,9 @@
     "[elm]": {
         "editor.formatOnSave": true
     },
+    "explorer.confirmDelete": false,
+    "center-editor-window.threeStateToggle": true,
     "diffEditor.renderSideBySide": false,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "rewrap.wrappingColumn": 120
 }
