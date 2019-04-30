@@ -1,9 +1,9 @@
 {
     "python.venvPath": "/Users/abingham/.virtualenvs",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "alt",
+    "editor.multiCursorModifier": "ctrlCmd",
     "git.confirmSync": false,
     "python.venvFolders": [
         ".virtualenvs",
@@ -18,7 +18,7 @@
     "files.associations": {
         "*.gjenta": "python"
     },
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "[elm]": {
         "editor.formatOnSave": true
     },

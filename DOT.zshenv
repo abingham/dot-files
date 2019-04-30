@@ -10,6 +10,8 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework --enable-ipv6 --enable-unicode 
 
 export PATH=$PATH:/usr/local/bin
 
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Do this *without* rehashing to avoid a) doing it too many times (i.e. on each
 # subprocess invocation) and b) the resulting locking problem. We'll do
 # rehashing on interactive shells.
