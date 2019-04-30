@@ -1,7 +1,7 @@
 {
     "python.venvPath": "/Users/abingham/.virtualenvs",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 3,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "git.confirmSync": false,
@@ -25,5 +25,6 @@
     "explorer.confirmDelete": false,
     "center-editor-window.threeStateToggle": true,
     "diffEditor.renderSideBySide": false,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "rewrap.wrappingColumn": 120
 }
