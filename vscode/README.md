@@ -11,5 +11,5 @@ ln -s ~/repos/dot-files/vscode/User ~/Library/Application\ Support/Code/User
 The `extensions.list` file is a list of extensions to install into code. You can install them using something like this:
 
 ```
-cat extensions.list | xargs -L 1 echo /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension
+cat extensions.list | xargs -L 1 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension
 ```
