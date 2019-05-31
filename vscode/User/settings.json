@@ -1,7 +1,7 @@
 {
     "python.venvPath": "/Users/abingham/.virtualenvs",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "git.confirmSync": false,
@@ -26,5 +26,6 @@
     "center-editor-window.threeStateToggle": true,
     "diffEditor.renderSideBySide": false,
     "workbench.activityBar.visible": true,
-    "rewrap.wrappingColumn": 120
+    "rewrap.wrappingColumn": 120,
+    "C_Cpp.updateChannel": "Insiders"
 }

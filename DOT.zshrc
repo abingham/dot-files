@@ -113,3 +113,5 @@ pyenv rehash
 
 # activate the pyenv venvwrapper plugin
 pyenv virtualenvwrapper 
+
+alias ls="ls -F"
