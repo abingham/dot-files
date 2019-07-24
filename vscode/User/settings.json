@@ -27,5 +27,6 @@
     "diffEditor.renderSideBySide": false,
     "workbench.activityBar.visible": true,
     "rewrap.wrappingColumn": 120,
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.accessibilitySupport": "off"
 }
