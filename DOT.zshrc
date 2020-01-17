@@ -116,3 +116,5 @@ pyenv rehash
 pyenv virtualenvwrapper 
 
 alias ls="ls -F"
+
+source /Users/abingham/Library/Preferences/org.dystroy.broot/launcher/bash/br
