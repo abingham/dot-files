@@ -3,7 +3,7 @@
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.multiCursorModifier": "alt",
     "git.confirmSync": false,
     "python.venvFolders": [
         ".virtualenvs",
@@ -11,13 +11,17 @@
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
-    "workbench.colorTheme": "Default Light+",
     "terminal.integrated.rendererType": "dom",
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "autopep8",
     "files.associations": {
-        "*.gjenta": "python"
+        "*.gjenta": "python",
+        "SConstruct": "python",
+        "SConscript": "python"
     },
+    "restructuredtext.linter.extraArgs": [
+        "--max-line-length=120"
+    ],
     "python.jediEnabled": true,
     "[elm]": {
         "editor.formatOnSave": true
@@ -26,5 +30,11 @@
     "center-editor-window.threeStateToggle": true,
     "diffEditor.renderSideBySide": false,
     "workbench.activityBar.visible": true,
-    "rewrap.wrappingColumn": 120
+    "rewrap.wrappingColumn": 120,
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.accessibilitySupport": "off",
+    "workbench.statusBar.visible": true,
+    "workbench.list.openMode": "doubleClick",
+    "cmake.configureOnOpen": true,
+    "workbench.colorTheme": "Default Light+"
 }
