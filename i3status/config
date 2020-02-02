@@ -11,13 +11,14 @@ general {
         interval = 5
 }
 
+
+order += "cpu_usage"
 # order += "ipv6"
 order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
-order += "load"
-order += "cpu_usage"
+# order += "load"
 order += "tztime local"
 
 wireless _first_ {
@@ -44,7 +45,7 @@ load {
 }
 
 cpu_usage {
-	format = "CPU %usage {%cpu0 %cpu1}"
+	format = "%cpu0 %cpu1 %cpu2 %cpu3"
 }
 
 disk "/" {
