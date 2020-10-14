@@ -22,7 +22,6 @@
     "restructuredtext.linter.extraArgs": [
         "--max-line-length=120"
     ],
-    "python.jediEnabled": true,
     "[elm]": {
         "editor.formatOnSave": true
     },
@@ -36,5 +35,22 @@
     "workbench.statusBar.visible": true,
     "workbench.list.openMode": "doubleClick",
     "cmake.configureOnOpen": true,
-    "workbench.colorTheme": "Default Light+"
+    "explorer.autoReveal": false,
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "html"
+    ],
+    "python.pythonPath": "/Users/abingham/.pyenv/shims/python",
+    "julia.enableTelemetry": true,
+    "restructuredtext.linter.name": "doc8",
+    "restructuredtext.linter.run": "onSave",
+    "restructuredtext.linter.disabled": true,
+    "spellright.language": [
+        "en"
+    ],
+    "python.jediEnabled": false,
+    "python.languageServer": "Pylance",
+    "omnisharp.path": "",
+    "workbench.colorTheme": "Quiet Light"
 }

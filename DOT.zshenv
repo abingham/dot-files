@@ -21,3 +21,12 @@ fi
 
 # Need to set this for rust to see libgfortran
 export LIBRARY_PATH=/usr/local/Cellar/gcc/8.2.0/lib/gcc/8/
+
+# Activate a Python virtual environment based on the Python executable in that environment.
+# This is useful e.g. in vscode tasks which only really have access to that executable but 
+# still want to activate an environment. 
+activate_from_py () {
+    BIN_DIR=`dirname $1` 
+    ACTIVATE_SCRIPT=$BIN_DIR/activate
+    source $ACTIVATE_SCRIPT
+}

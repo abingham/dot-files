@@ -31,5 +31,14 @@
 			".. visning-movie:: ${1:name} ${2:start marker} ${3:stop marker}"
 		],
 		"description": "visning-still directive"
+	},
+	"marker": {
+		"scope": "restructuredtext",
+		"prefix": "marker",
+		"body": [
+			".. marker:: ${1:name}
+		],
+		"description": "marker directive"
 	}
+
 }

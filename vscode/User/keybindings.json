@@ -20,5 +20,9 @@
     {
         "key": "ctrl+l",
         "command": "center-editor-window.center"
+    },
+    {
+        "key": "cmd+w cmd+n",
+        "command": "workbench.action.terminal.focusNext"
     }
 ]
