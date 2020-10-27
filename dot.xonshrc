@@ -3,76 +3,12 @@ $PROMPT = '{env_name}{BOLD_GREEN}{user}@{hostname}{BOLD_BLUE} {cwd}{branch_color
 $XONSH_COLOR_STYLE = 'emacs'
 xontrib load pyenv
 # XONSH WEBCONFIG END
+
 xontrib load vox
+# xontrib load vox_completion
 
 # aliases['workon'] = 'vox activate'
 
-
-class Completer:
-    def __init__(self, command):
-        self.command = command
-        self.subcommands = {}
-
-    def subcommand(self, name):
-        def dec(f):
-            self.subcommands[name] = f
-            return f
-        return dec
-
-    def __call__(self, prefix, line, begidx, endidx, ctx):
-        command_tokens = line[:begidx].split()
-        for sub, handler in self.subcommands.items():
-            if command_tokens == [self.command, sub]:
-                return handler(prefix, line, begidx, endidx, ctx)
-
-        if command_tokens == [self.command]:
-            return set(s for s in self.subcommands if s.startswith(prefix))
-
-
-_vox_completer = Completer('vox')
-
-
-@_vox_completer.subcommand('new')
-@_vox_completer.subcommand('create')
-def _vox_new(prefix, line, begidx, endidx, ctx):
-    pass
-
-
-@_vox_completer.subcommand('activate')
-@_vox_completer.subcommand('workon')
-@_vox_completer.subcommand('enter')
-def _vox_activate(prefix, line, begidx, endidx, ctx):
-    envs = $(vox list).split()
-    return set(env for env in envs if env.startswith(prefix))
-
-
-@_vox_completer.subcommand('deactivate')
-@_vox_completer.subcommand('exit')
-def _vox_deactivate(prefix, line, begidx, endidx, ctx):
-    pass
-
-
-@_vox_completer.subcommand('list')
-@_vox_completer.subcommand('ls')
-def _vox_list(prefix, line, begidx, endidx, ctx):
-    pass
-
-
-@_vox_completer.subcommand('remove')
-@_vox_completer.subcommand('rm')
-@_vox_completer.subcommand('delete')
-@_vox_completer.subcommand('del')
-def _vox_remove(prefix, line, begidx, endidx, ctx):
-    envs = $(vox list).split()
-    return set(env for env in envs if env.startswith(prefix))
-
-
-@_vox_completer.subcommand('help')
-def _vox_help(prefix, line, begidx, endidx, ctx):
-    pass
-
-
-completer add vox _vox_completer
 
 # TODO: This fails with an assertion...
 # $XONSH_SHOW_TRACEBACK = True
