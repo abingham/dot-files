@@ -1,6 +1,8 @@
 # .zshenv is always sourced for all zsh shells
 export PATH=$PATH:~/go/bin
 
+export PATH=/Users/abingham/.local/share/ponyup/bin:$PATH
+
 # This ensures that pyenv-installed pythons are "framework". Sheesh...
 export PYTHON_CONFIGURE_OPTS="--enable-framework --enable-ipv6 --enable-unicode --with-threads"
 
@@ -30,3 +32,4 @@ activate_from_py () {
     ACTIVATE_SCRIPT=$BIN_DIR/activate
     source $ACTIVATE_SCRIPT
 }
+source '/usr/local/opt/z/etc/profile.d/z.sh'

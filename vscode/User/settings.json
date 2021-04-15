@@ -1,7 +1,6 @@
 {
     "python.venvPath": "/Users/abingham/.virtualenvs",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "alt",
     "git.confirmSync": false,
@@ -13,7 +12,6 @@
     ],
     "terminal.integrated.rendererType": "dom",
     "python.linting.flake8Enabled": true,
-    "python.formatting.provider": "autopep8",
     "files.associations": {
         "*.gjenta": "python",
         "SConstruct": "python",
@@ -52,5 +50,37 @@
     "python.jediEnabled": false,
     "python.languageServer": "Pylance",
     "omnisharp.path": "",
-    "workbench.colorTheme": "Quiet Light"
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "around.pairs": {
+
+        "(": [
+            "(",
+            ")"
+        ],
+        "{": [
+            "{",
+            "}"
+        ],
+        "<": [
+            "<",
+            ">"
+        ],
+        "[": [
+            "[",
+            "]"
+        ]
+    },
+    "workbench.editor.showTabs": true,
+    "magit.display-buffer-function": "same-column",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Default Light+",
+    "window.zoomLevel": 1
 }

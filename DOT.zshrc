@@ -132,5 +132,3 @@ export EDITOR=vim
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/Users/abingham/.netlify/helper/path.zsh.inc' ]; then source '/Users/abingham/.netlify/helper/path.zsh.inc'; fi
 
-
-
