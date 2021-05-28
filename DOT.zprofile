@@ -5,3 +5,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
+
+# Created by `pipx` on 2021-04-26 09:43:28
+export PATH="$PATH:/Users/abingham/.local/bin"

@@ -39,7 +39,6 @@
         "latex",
         "html"
     ],
-    "python.pythonPath": "/Users/abingham/.pyenv/shims/python",
     "julia.enableTelemetry": true,
     "restructuredtext.linter.name": "doc8",
     "restructuredtext.linter.run": "onSave",
@@ -52,7 +51,7 @@
     "omnisharp.path": "",
     "workbench.editorAssociations": [
         {
-            "viewType": "jupyter.notebook.ipynb",
+            "viewType": "jupyter-notebook",
             "filenamePattern": "*.ipynb"
         }
     ],
@@ -60,7 +59,6 @@
         "language-julia.interrupt"
     ],
     "around.pairs": {
-
         "(": [
             "(",
             ")"
@@ -82,5 +80,21 @@
     "magit.display-buffer-function": "same-column",
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.colorTheme": "Default Light+",
-    "window.zoomLevel": 1
+    "jupyter.askForKernelRestart": false,
+    "[plaintext]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestions": false
+    },
+    "[restructuredtext]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestions": false
+    },
+    "[markdown]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.quickSuggestions": false
+    },
+    "jupyter.alwaysTrustNotebooks": true,
+    "window.zoomLevel": 1,
+    "gitlens.views.branches.branches.layout": "list",
+    "redhat.telemetry.enabled": true
 }
