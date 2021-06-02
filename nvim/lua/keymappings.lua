@@ -7,4 +7,6 @@ utils.map('n', '<leader>ww', ':wincmd w<CR>') -- select next window in rotation
 utils.map('n', '<leader>fs', ':w!<CR>') -- save file
 utils.map('n', '<leader>ff', ':FZF<CR>')  -- FZF file selection
 utils.map('n', '<leader>fb', ':Buffers<CR>')  -- FZF buffer selection
+utils.map('n', '<leader>fh', ':hide<CR>')  -- FZF buffer selection
+utils.map('n', '<leader>sg', ':Rg<CR>') -- fzf rgrep
 utils.map('n', '<leader>b', ':NERDTreeToggle<CR>') -- toggle nerdtree

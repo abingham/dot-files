@@ -4,12 +4,16 @@ return require('packer').startup(function()
   use {'wbthomason/packer.nvim', opt = true}
 
   -- Fuzzy finder
-  use { 'junegunn/fzf.vim', 
-        requires = {{ 'junegunn/fzf'}} }
+  use { 'junegunn/fzf.vim', requires = {{ 'junegunn/fzf'}} }
+
+  -- tree display
+  use {'scrooloose/nerdtree'}
+
+  -- git
+  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
   -- LSP and completion
   use { 'neovim/nvim-lspconfig' }
-  use { 'nvim-lua/completion-nvim' }
 
   -- Lua development
   -- use { 'tjdevries/nlua.nvim' }
