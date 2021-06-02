@@ -96,5 +96,6 @@
     "jupyter.alwaysTrustNotebooks": true,
     "window.zoomLevel": 1,
     "gitlens.views.branches.branches.layout": "list",
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "files.autoSave": "afterDelay"
 }
