@@ -24,4 +24,8 @@ require('keymappings')
 -- Configure LSP stuff
 require('lsp')
 
+vim.g.python3_host_prog = '/Users/abingham/.virtualenvs/nvim/bin/python'
+
+-- TODO: Try out coc
+-- TODO: Sort out how to use vim-dispatch
 

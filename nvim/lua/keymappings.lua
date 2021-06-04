@@ -10,4 +10,9 @@ utils.map('n', '<leader>fb', ':Buffers<CR>')  -- FZF buffer selection
 utils.map('n', '<leader>fh', ':hide<CR>')  -- FZF buffer selection
 utils.map('n', '<leader>sg', ':Rg<CR>') -- fzf rgrep
 utils.map('n', '<leader>gs', ':Neogit<CR>') -- neogit status
-utils.map('n', '<leader>b', ':NERDTreeToggle<CR>') -- toggle nerdtree
+utils.map('n', '<leader>ft', ':NERDTreeToggle<CR>') -- toggle nerdtree
+
+-- TODO: Is there some language-agnostic formatting hook I should be using?
+utils.map('n', '<leader>bf', ':call Black()<CR>') -- black formatting
+
+utils.map('n', '<leader>gc', ':Commentary<CR>') -- toggle comments

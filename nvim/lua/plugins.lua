@@ -24,4 +24,16 @@ return require('packer').startup(function()
   -- Fugitive for Git
   use { 'tpope/vim-fugitive' }
 
+  -- airline statusbar
+  use { 'vim-airline/vim-airline' }
+  use { 'vim-airline/vim-airline-themes' }
+
+  -- black formatting (python)
+  use { 'a-vrma/black-nvim' }
+
+  use { 'mhinz/vim-startify' }
+
+  use { 'jiangmiao/auto-pairs' }
+
+  use { 'tpope/vim-commentary' }
 end)
