@@ -135,5 +135,3 @@ if [ -f '/Users/abingham/.netlify/helper/path.zsh.inc' ]; then source '/Users/ab
 
 # Created by `pipx` on 2021-04-26 09:43:28
 export PATH="$PATH:/Users/abingham/.local/bin"
-
-. ~/.visning-complete.zsh
