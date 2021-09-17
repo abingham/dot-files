@@ -11,6 +11,7 @@
         "--max-line-length=120"
     ],
     "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.tabs.enabled": false,
     "python.linting.flake8Enabled": true,
     "files.associations": {
         "*.gjenta": "python",
@@ -49,12 +50,9 @@
     "python.jediEnabled": false,
     "python.languageServer": "Pylance",
     "omnisharp.path": "",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
     ],
@@ -94,8 +92,37 @@
         "editor.quickSuggestions": false
     },
     "jupyter.alwaysTrustNotebooks": true,
-    "window.zoomLevel": 1,
     "gitlens.views.branches.branches.layout": "list",
     "redhat.telemetry.enabled": true,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 8,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": true,
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": false
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "julia.symbolCacheDownload": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "window.zoomLevel": 1
 }

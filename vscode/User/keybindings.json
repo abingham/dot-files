@@ -11,7 +11,11 @@
     },
     {
         "key": "cmd+w cmd+t",
-        "command": "workbench.action.terminal.focus"
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "cmd+w cmd+p",
+        "command": "workbench.action.terminal.focusNextPane"
     },
     {
         "key": "alt+s",
