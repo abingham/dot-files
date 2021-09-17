@@ -32,4 +32,3 @@ activate_from_py () {
     ACTIVATE_SCRIPT=$BIN_DIR/activate
     source $ACTIVATE_SCRIPT
 }
-source '/usr/local/opt/z/etc/profile.d/z.sh'

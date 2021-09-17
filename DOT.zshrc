@@ -119,9 +119,6 @@ pyenv virtualenvwrapper
 alias ls="ls -F"
 alias pipup='pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade'
 
-source /Users/abingham/Library/Preferences/org.dystroy.broot/launcher/bash/br
-source /Users/abingham/.netlify/helper/path.zsh.inc 
-
 export JULIA_EDITOR=vim
 export EDITOR=vim
 
@@ -135,3 +132,5 @@ if [ -f '/Users/abingham/.netlify/helper/path.zsh.inc' ]; then source '/Users/ab
 
 # Created by `pipx` on 2021-04-26 09:43:28
 export PATH="$PATH:/Users/abingham/.local/bin"
+
+source /Users/abingham/.config/broot/launcher/bash/br
