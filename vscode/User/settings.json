@@ -51,7 +51,8 @@
     "python.languageServer": "Pylance",
     "omnisharp.path": "",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.mov": "default"
     },
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
@@ -123,5 +124,9 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust"
+    },
+    "window.zoomLevel": 2
 }

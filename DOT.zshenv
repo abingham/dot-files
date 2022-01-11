@@ -28,3 +28,4 @@ activate_from_py () {
     ACTIVATE_SCRIPT=$BIN_DIR/activate
     source $ACTIVATE_SCRIPT
 }
+. "$HOME/.cargo/env"
