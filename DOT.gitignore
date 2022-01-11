@@ -1,2 +1,7 @@
+# To configure the use of this file do:
+#
+#    git config --global core.excludesfile ~/.gitignore
+
 *.tfvars
 *.pem
+.DS_Store
