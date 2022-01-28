@@ -61,6 +61,7 @@ ZSH_THEME="terminalparty"
 plugins=(
     docker
     git
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
