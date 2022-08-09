@@ -5,3 +5,4 @@
 *.tfvars
 *.pem
 .DS_Store
+.vscode/

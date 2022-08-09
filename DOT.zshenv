@@ -1,7 +1,7 @@
 # .zshenv is always sourced for all zsh shells
 export PATH=$PATH:~/go/bin
 
-export PATH=/Users/abingham/.local/share/ponyup/bin:$PATH
+export PATH=$HOME/.local/share/ponyup/bin:$PATH
 
 # This ensures that pyenv-installed pythons are "framework". Sheesh...
 export PYTHON_CONFIGURE_OPTS="--enable-framework --enable-ipv6 --enable-unicode --with-threads"
@@ -9,6 +9,9 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework --enable-ipv6 --enable-unicode 
 export PATH=$PATH:/usr/local/bin
 
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Tools like pipx put stuff here.
+export PATH="$PATH:$HOME/.local/bin"
 
 # Do this *without* rehashing to avoid a) doing it too many times (i.e. on each
 # subprocess invocation) and b) the resulting locking problem. We'll do

@@ -1,4 +1,5 @@
 {
+    "demonstrable.autoUpdateLanguageServer": false,
     "python.venvPath": "/Users/abingham/.virtualenvs",
     "explorer.confirmDragAndDrop": false,
     "editor.minimap.enabled": false,
@@ -18,9 +19,6 @@
         "SConstruct": "python",
         "SConscript": "python"
     },
-    "restructuredtext.linter.extraArgs": [
-        "--max-line-length=120"
-    ],
     "[elm]": {
         "editor.formatOnSave": true
     },
@@ -28,28 +26,12 @@
     "center-editor-window.threeStateToggle": true,
     "diffEditor.renderSideBySide": false,
     "workbench.activityBar.visible": true,
-    "rewrap.wrappingColumn": 120,
-    "C_Cpp.updateChannel": "Insiders",
     "editor.accessibilitySupport": "off",
     "workbench.statusBar.visible": true,
     "workbench.list.openMode": "doubleClick",
-    "cmake.configureOnOpen": true,
     "explorer.autoReveal": false,
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "html"
-    ],
-    "julia.enableTelemetry": true,
-    "restructuredtext.linter.name": "doc8",
     "restructuredtext.linter.run": "onSave",
-    "restructuredtext.linter.disabled": true,
-    "spellright.language": [
-        "en"
-    ],
-    "python.jediEnabled": false,
     "python.languageServer": "Pylance",
-    "omnisharp.path": "",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.mov": "default"
@@ -78,19 +60,30 @@
     "workbench.editor.showTabs": true,
     "magit.display-buffer-function": "same-column",
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Default Light+",
     "jupyter.askForKernelRestart": false,
     "[plaintext]": {
         "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     "[restructuredtext]": {
         "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     "[markdown]": {
         "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     "jupyter.alwaysTrustNotebooks": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -110,14 +103,9 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 4,
         "editor.detectIndentation": true,
-        "gitlens.codeLens.symbolScopes": [
-            "!Module"
-        ],
         "editor.wordBasedSuggestions": false
     },
     "workbench.editor.untitled.hint": "hidden",
-    "julia.symbolCacheDownload": true,
-    "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.exclude": {
         "**/.classpath": true,
@@ -128,5 +116,22 @@
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust"
     },
-    "window.zoomLevel": 2
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "esbonio.server.enabled": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Default Light+",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

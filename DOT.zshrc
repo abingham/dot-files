@@ -5,7 +5,7 @@
 
 export DISABLE_VENV_CD=1
 
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installationzsh-.
 export ZSH=$HOME/.oh-my-zsh
 
 # set name of the theme to load. Optionally, if you set this to "random"
@@ -80,5 +80,11 @@ export EDITOR=vim
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper
 
+alias pyenv86="arch -x86_64 pyenv"
+alias brew86="arch -x86_64 /usr/local/bin/brew"
+
 # This helps e.g. magickwand find it's libraries
 export MAGICK_HOME=/opt/homebrew
+
+export PIP_REQUIRE_VIRTUALENV=true
+eval "$(atuin init zsh)"
