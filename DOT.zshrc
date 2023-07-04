@@ -88,3 +88,6 @@ export MAGICK_HOME=/opt/homebrew
 
 export PIP_REQUIRE_VIRTUALENV=true
 eval "$(atuin init zsh)"
+
+source /Users/austin/.docker/init-zsh.sh || true # Added by Docker Desktop
+export MAGICK_HOME="/opt/homebrew"

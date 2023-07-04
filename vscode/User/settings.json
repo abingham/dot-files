@@ -1,137 +1,183 @@
 {
-    "demonstrable.autoUpdateLanguageServer": false,
-    "python.venvPath": "/Users/abingham/.virtualenvs",
-    "explorer.confirmDragAndDrop": false,
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "alt",
-    "git.confirmSync": false,
-    "python.venvFolders": [
-        ".virtualenvs",
-    ],
-    "python.linting.flake8Args": [
-        "--max-line-length=120"
-    ],
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.tabs.enabled": false,
-    "python.linting.flake8Enabled": true,
-    "files.associations": {
-        "*.gjenta": "python",
-        "SConstruct": "python",
-        "SConscript": "python"
-    },
-    "[elm]": {
-        "editor.formatOnSave": true
-    },
-    "explorer.confirmDelete": false,
-    "center-editor-window.threeStateToggle": true,
-    "diffEditor.renderSideBySide": false,
-    "workbench.activityBar.visible": true,
-    "editor.accessibilitySupport": "off",
-    "workbench.statusBar.visible": true,
-    "workbench.list.openMode": "doubleClick",
-    "explorer.autoReveal": false,
-    "restructuredtext.linter.run": "onSave",
-    "python.languageServer": "Pylance",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook",
-        "*.mov": "default"
-    },
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
-    ],
-    "around.pairs": {
-        "(": [
-            "(",
-            ")"
-        ],
-        "{": [
-            "{",
-            "}"
-        ],
-        "<": [
-            "<",
-            ">"
-        ],
-        "[": [
-            "[",
-            "]"
-        ]
-    },
-    "workbench.editor.showTabs": true,
-    "magit.display-buffer-function": "same-column",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "jupyter.askForKernelRestart": false,
-    "[plaintext]": {
-        "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": {
-            "comments": "off",
-            "strings": "off",
-            "other": "off"
-        }
-    },
-    "[restructuredtext]": {
-        "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": {
-            "comments": "off",
-            "strings": "off",
-            "other": "off"
-        }
-    },
-    "[markdown]": {
-        "editor.wordBasedSuggestions": false,
-        "editor.quickSuggestions": {
-            "comments": "off",
-            "strings": "off",
-            "other": "off"
-        }
-    },
-    "jupyter.alwaysTrustNotebooks": true,
-    "gitlens.views.branches.branches.layout": "list",
-    "redhat.telemetry.enabled": true,
-    "files.autoSave": "afterDelay",
-    "editor.tabSize": 8,
-    "editor.cursorStyle": "line",
-    "editor.insertSpaces": false,
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "[python]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4,
-        "editor.detectIndentation": true,
-        "editor.wordBasedSuggestions": false
-    },
-    "workbench.editor.untitled.hint": "hidden",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "esbonio.server.enabled": false,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.colorTheme": "Default Light+",
-    "python.terminal.activateEnvInCurrentTerminal": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "demonstrable.autoUpdateLanguageServer": false,
+  "python.venvPath": "/Users/abingham/.virtualenvs",
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "alt",
+  "git.confirmSync": false,
+  "python.venvFolders": [".virtualenvs"],
+  "python.linting.flake8Args": ["--max-line-length=120"],
+  "terminal.integrated.rendererType": "dom",
+  "python.linting.flake8Enabled": true,
+  "files.associations": {
+    "*.gjenta": "python",
+    "SConstruct": "python",
+    "SConscript": "python"
+  },
+  "[elm]": {
+    "editor.formatOnSave": true
+  },
+  "explorer.confirmDelete": false,
+  "center-editor-window.threeStateToggle": true,
+  "diffEditor.renderSideBySide": false,
+  "workbench.activityBar.visible": true,
+  "editor.accessibilitySupport": "off",
+  "workbench.statusBar.visible": true,
+  "workbench.list.openMode": "doubleClick",
+  "explorer.autoReveal": false,
+  "restructuredtext.linter.run": "onSave",
+  "python.languageServer": "Pylance",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.mov": "default"
+  },
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "around.pairs": {
+    "(": ["(", ")"],
+    "{": ["{", "}"],
+    "<": ["<", ">"],
+    "[": ["[", "]"]
+  },
+  "workbench.editor.showTabs": true,
+  "magit.display-buffer-function": "same-column",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "jupyter.askForKernelRestart": false,
+  "[plaintext]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
     }
+  },
+  "[restructuredtext]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[markdown]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "jupyter.alwaysTrustNotebooks": true,
+  "gitlens.views.branches.branches.layout": "list",
+  "redhat.telemetry.enabled": true,
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.wordBasedSuggestions": false,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "esbonio.server.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Visual Studio Light",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "npm.keybindingsChangedWarningShown": true,
+  "todohighlight.isEnable": false,
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.tabs.enabled": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "python.analysis.indexing": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.enablePytestSupport": true,
+  "python.analysis.gotoDefinitionInStringLiteral": true,
+  "python.analysis.inlayHints.callArgumentNames": true,
+  "window.zoomLevel": 1,
+  "debug.onTaskErrors": "abort",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.formatting.provider": "none",
+  "project-scopes.activeScope": "base",
+  "project-scopes.enabled": true,
+  "project-scopes.globalExclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "project-scopes.scopes": {
+    "base": {
+      "included": [],
+      "excluded": []
+    }
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.defaultInterpreterPath": "/Users/austin/.virtualenvs/deca-dev"
 }
