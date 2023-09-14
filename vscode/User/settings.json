@@ -1,14 +1,10 @@
 {
-  "demonstrable.autoUpdateLanguageServer": false,
   "python.venvPath": "/Users/abingham/.virtualenvs",
   "explorer.confirmDragAndDrop": false,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "alt",
   "git.confirmSync": false,
   "python.venvFolders": [".virtualenvs"],
-  "python.linting.flake8Args": ["--max-line-length=120"],
-  "terminal.integrated.rendererType": "dom",
-  "python.linting.flake8Enabled": true,
   "files.associations": {
     "*.gjenta": "python",
     "SConstruct": "python",
@@ -66,8 +62,6 @@
       "other": "off"
     }
   },
-  "jupyter.alwaysTrustNotebooks": true,
-  "gitlens.views.branches.branches.layout": "list",
   "redhat.telemetry.enabled": true,
   "files.autoSave": "afterDelay",
   "editor.tabSize": 8,
@@ -123,14 +117,12 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "npm.keybindingsChangedWarningShown": true,
-  "todohighlight.isEnable": false,
   "editor.inlineSuggest.enabled": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
   "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
+    "editor.defaultFormatter": ""
   },
   "terminal.integrated.tabs.location": "left",
   "terminal.integrated.tabs.enabled": false,
@@ -141,43 +133,26 @@
     "markdown": false
   },
   "python.analysis.indexing": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.autoFormatStrings": true,
   "python.analysis.enablePytestSupport": true,
   "python.analysis.gotoDefinitionInStringLiteral": true,
   "python.analysis.inlayHints.callArgumentNames": true,
-  "window.zoomLevel": 1,
   "debug.onTaskErrors": "abort",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.formatting.provider": "none",
-  "project-scopes.activeScope": "base",
-  "project-scopes.enabled": true,
-  "project-scopes.globalExclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "project-scopes.scopes": {
-    "base": {
-      "included": [],
-      "excluded": []
-    }
-  },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.defaultInterpreterPath": "/Users/austin/.virtualenvs/deca-dev"
+  "python.defaultInterpreterPath": "/Users/austin/.virtualenvs/deca-dev",
+  "git.openRepositoryInParentFolders": "never",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "window.zoomLevel": 1,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }
