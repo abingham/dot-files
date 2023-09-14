@@ -91,3 +91,26 @@ eval "$(atuin init zsh)"
 
 source /Users/austin/.docker/init-zsh.sh || true # Added by Docker Desktop
 export MAGICK_HOME="/opt/homebrew"
+
+vshow() {
+    SLIDE_NAME="<NO SLIDE DEFINED>"
+    if [ -n "$1" ]
+    then
+        SLIDE_NAME=$1
+    fi
+
+    THEME_NAME="pluralsight_2023_light"
+    if [ -n "$2" ]
+    then
+        THEME_NAME=$2
+    fi
+
+    RESOLUTION="800x600"
+    if [ -n "$3" ]
+    then
+        RESOLUTION=$3
+    fi
+
+    echo visning view-slide --theme=$THEME_NAME --resolution=$RESOLUTION --display=0 $SLIDE_NAME
+    visning view-slide --theme=$THEME_NAME --resolution=$RESOLUTION --display=0 $SLIDE_NAME
+}
