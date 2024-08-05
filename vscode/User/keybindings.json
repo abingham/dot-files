@@ -1,100 +1,110 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "alt+=",
-        "command": "editor.action.formatDocument",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+w cmd+w",
-        "command": "workbench.action.focusNextGroup"
-    },
-    {
-        "key": "cmd+w cmd+t",
-        "command": "workbench.action.terminal.focusNext"
-    },
-    {
-        "key": "cmd+w cmd+p",
-        "command": "workbench.action.terminal.focusNextPane"
-    },
-    {
-        "key": "alt+s",
-        "command": "extension.around",
-    },
-    {
-        "key": "ctrl+l",
-        "command": "center-editor-window.center"
-    },
-    {
-        "key": "cmd+w cmd+n",
-        "command": "workbench.action.terminal.focusNext"
-    },
-    {
-        "key": "tab",
-        "command": "extension.vim_tab",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
-    },
-    {
-        "key": "tab",
-        "command": "-extension.vim_tab",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-    },
-    {
-        "key": "x",
-        "command": "magit.discard-at-point",
-        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-    },
-    {
-        "key": "k",
-        "command": "-magit.discard-at-point"
-    },
-    {
-        "key": "-",
-        "command": "magit.reverse-at-point",
-        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-    },
-    {
-        "key": "v",
-        "command": "-magit.reverse-at-point"
-    },
-    {
-        "key": "shift+-",
-        "command": "magit.reverting",
-        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-    },
-    {
-        "key": "shift+v",
-        "command": "-magit.reverting"
-    },
-    {
-        "key": "shift+o",
-        "command": "magit.resetting",
-        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-    },
-    {
-        "key": "shift+x",
-        "command": "-magit.resetting"
-    },
-    {
-        "key": "x",
-        "command": "-magit.reset-mixed"
-    },
-    {
-        "key": "ctrl+u x",
-        "command": "-magit.reset-hard"
-    },
-    {
-        "key": "alt+q",
-        "command": "editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+.",
-        "command": "-editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+cmd+m",
-        "command": "workbench.action.toggleEditorWidths"
-    }
+  {
+    "key": "alt+=",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+w cmd+w",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "cmd+w cmd+t",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "cmd+w cmd+p",
+    "command": "workbench.action.terminal.focusNextPane"
+  },
+  {
+    "key": "alt+s",
+    "command": "extension.around"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "center-editor-window.center"
+  },
+  {
+    "key": "cmd+w cmd+n",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "tab",
+    "command": "extension.vim_tab",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
+  },
+  {
+    "key": "tab",
+    "command": "-extension.vim_tab",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "x",
+    "command": "magit.discard-at-point",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "k",
+    "command": "-magit.discard-at-point"
+  },
+  {
+    "key": "-",
+    "command": "magit.reverse-at-point",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "v",
+    "command": "-magit.reverse-at-point"
+  },
+  {
+    "key": "shift+-",
+    "command": "magit.reverting",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "shift+v",
+    "command": "-magit.reverting"
+  },
+  {
+    "key": "shift+o",
+    "command": "magit.resetting",
+    "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  {
+    "key": "shift+x",
+    "command": "-magit.resetting"
+  },
+  {
+    "key": "x",
+    "command": "-magit.reset-mixed"
+  },
+  {
+    "key": "ctrl+u x",
+    "command": "-magit.reset-hard"
+  },
+  {
+    "key": "alt+q",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+cmd+m",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "alt+shift+d",
+    "command": "moveStatement.moveStatementDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+u",
+    "command": "moveStatement.moveStatementUp",
+    "when": "editorTextFocus"
+  }
 ]

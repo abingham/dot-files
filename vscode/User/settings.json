@@ -1,4 +1,5 @@
 {
+  "cmake.ignoreCMakeListsMissing": true,
   "python.venvPath": "/Users/abingham/.virtualenvs",
   "explorer.confirmDragAndDrop": false,
   "editor.minimap.enabled": false,
@@ -16,13 +17,11 @@
   "explorer.confirmDelete": false,
   "center-editor-window.threeStateToggle": true,
   "diffEditor.renderSideBySide": false,
-  "workbench.activityBar.visible": true,
   "editor.accessibilitySupport": "off",
   "workbench.statusBar.visible": true,
   "workbench.list.openMode": "doubleClick",
   "explorer.autoReveal": false,
   "restructuredtext.linter.run": "onSave",
-  "python.languageServer": "Pylance",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.mov": "default"
@@ -34,12 +33,12 @@
     "<": ["<", ">"],
     "[": ["[", "]"]
   },
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "magit.display-buffer-function": "same-column",
   "diffEditor.ignoreTrimWhitespace": false,
   "jupyter.askForKernelRestart": false,
   "[plaintext]": {
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
@@ -47,7 +46,7 @@
     }
   },
   "[restructuredtext]": {
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
@@ -55,7 +54,7 @@
     }
   },
   "[markdown]": {
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
@@ -64,9 +63,7 @@
   },
   "redhat.telemetry.enabled": true,
   "files.autoSave": "afterDelay",
-  "editor.tabSize": 8,
   "editor.cursorStyle": "line",
-  "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
@@ -78,11 +75,10 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
-    "editor.wordBasedSuggestions": false,
+    "editor.wordBasedSuggestions": "off",
     "editor.formatOnType": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "workbench.editor.untitled.hint": "hidden",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.exclude": {
     "**/.git": true,
@@ -100,7 +96,7 @@
     "editor.defaultFormatter": "rust-lang.rust"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -128,9 +124,10 @@
   "terminal.integrated.tabs.enabled": false,
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "scminput": false,
+    "yaml": false
   },
   "python.analysis.indexing": true,
   "python.analysis.inlayHints.variableTypes": true,
@@ -139,6 +136,18 @@
   "python.analysis.enablePytestSupport": true,
   "python.analysis.gotoDefinitionInStringLiteral": true,
   "python.analysis.inlayHints.callArgumentNames": true,
+	"python.analysis.exclude": [
+		"build",
+		".hypothesis",
+		".idea",
+		".mypy_cache",
+		".pytest_cache",
+		".tox",
+		".nox",
+		".vscode",
+		"dist",
+		"scratch",
+	],
   "debug.onTaskErrors": "abort",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
@@ -147,12 +156,96 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.defaultInterpreterPath": "/Users/austin/.virtualenvs/deca-dev",
+  "python.defaultInterpreterPath": "/Users/austin/.pyenv/shims/python",
   "git.openRepositoryInParentFolders": "never",
-  "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
-  "window.zoomLevel": 1,
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "project-scopes.globalExclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "project-scopes.activeScope": "bullet_list",
+  "project-scopes.enabled": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "cmake.showOptionsMovedNotification": false,
+  "project-scopes.scopes": {
+    "base": {
+      "included": [],
+      "excluded": []
+    },
+  },
+  "[markdown][plaintext][python][restructuredtext]": {
+    "editor.wordBasedSuggestions": "off"
+  },
+  "window.zoomLevel": 1,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.packageIndexDepths": [
+  
+    {
+      "name": "",
+      "depth": 3
+    },
+    {
+      "name": "sklearn",
+      "depth": 2
+    },
+    {
+      "name": "matplotlib",
+      "depth": 2
+    },
+    {
+      "name": "scipy",
+      "depth": 2
+    },
+    {
+      "name": "flask",
+      "depth": 2
+    },
+    {
+      "name": "fastapi",
+      "depth": 2
+    }
+  ],
+  "python.analysis.userFileIndexingLimit": 20000,
+  "cmake.configureOnOpen": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "git.ignoreMissingGitWarning": true,
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "evenBetterToml.schema.enabled": false,
+  "demonstrable.autoUpdateLanguageServer": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "jinja-html": "html",
+    "python": "html"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "klass"
+  ],
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "demonstrable.defaultResolution": "1024x768",
+  "demonstrable.defaultTheme": "tubetrain-light"
 }

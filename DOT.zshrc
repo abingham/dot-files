@@ -62,6 +62,7 @@ plugins=(
     docker
     git
     zsh-autosuggestions
+    rye
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -77,12 +78,6 @@ alias pipup='pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 
 export JULIA_EDITOR=vim
 export EDITOR=vim
 
-eval "$(pyenv init -)"
-pyenv virtualenvwrapper
-
-alias pyenv86="arch -x86_64 pyenv"
-alias brew86="arch -x86_64 /usr/local/bin/brew"
-
 # This helps e.g. magickwand find it's libraries
 export MAGICK_HOME=/opt/homebrew
 
@@ -91,6 +86,8 @@ eval "$(atuin init zsh)"
 
 source /Users/austin/.docker/init-zsh.sh || true # Added by Docker Desktop
 export MAGICK_HOME="/opt/homebrew"
+
+export UV_INDEX_URL=http://localhost:4040/root/toplevel/+simple 
 
 vshow() {
     SLIDE_NAME="<NO SLIDE DEFINED>"
@@ -114,3 +111,13 @@ vshow() {
     echo visning view-slide --theme=$THEME_NAME --resolution=$RESOLUTION --display=0 $SLIDE_NAME
     visning view-slide --theme=$THEME_NAME --resolution=$RESOLUTION --display=0 $SLIDE_NAME
 }
+
+fpath=(~/.stripe $fpath)
+autoload -Uz compinit && compinit -i
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+pyenv virtualenvwrapper
+source "$HOME/.rye/env"
