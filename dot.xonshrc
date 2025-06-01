@@ -1,7 +1,7 @@
 # XONSH WEBCONFIG START
 $PROMPT = '{env_name}{BOLD_GREEN}{user}@{hostname}{BOLD_BLUE} {cwd}{branch_color}{curr_branch: {}}{RESET} {BOLD_BLUE}{prompt_end}{RESET} '
 $XONSH_COLOR_STYLE = 'emacs'
-xontrib load pyenv
+# xontrib load pyenv
 # XONSH WEBCONFIG END
 
 xontrib load vox

@@ -63,6 +63,8 @@ plugins=(
     git
     zsh-autosuggestions
     rye
+    stripe
+    direnv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -74,6 +76,8 @@ unsetopt autopushd
 
 alias ls="ls -F"
 alias pipup='pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade'
+alias bpython="uv run --with bpython bpython"
+alias tt="tubetrain"
 
 export JULIA_EDITOR=vim
 export EDITOR=vim
@@ -87,7 +91,7 @@ eval "$(atuin init zsh)"
 source /Users/austin/.docker/init-zsh.sh || true # Added by Docker Desktop
 export MAGICK_HOME="/opt/homebrew"
 
-export UV_INDEX_URL=http://localhost:4040/root/toplevel/+simple 
+# export UV_INDEX_URL=http://localhost:4040/root/toplevel/+simple 
 
 vshow() {
     SLIDE_NAME="<NO SLIDE DEFINED>"
@@ -115,9 +119,22 @@ vshow() {
 fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit -i
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
-pyenv virtualenvwrapper
-source "$HOME/.rye/env"
+# pyenv virtualenvwrapper
+# source "$HOME/.rye/env"
+
+source <(jj util completion zsh)
+. ~/.deca-complete.zsh
+. ~/.visning-complete.zsh
+. ~/.deca-complete.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

@@ -1,251 +1,152 @@
 {
-  "cmake.ignoreCMakeListsMissing": true,
-  "python.venvPath": "/Users/abingham/.virtualenvs",
-  "explorer.confirmDragAndDrop": false,
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "alt",
-  "git.confirmSync": false,
-  "python.venvFolders": [".virtualenvs"],
-  "files.associations": {
-    "*.gjenta": "python",
-    "SConstruct": "python",
-    "SConscript": "python"
-  },
-  "[elm]": {
-    "editor.formatOnSave": true
-  },
-  "explorer.confirmDelete": false,
-  "center-editor-window.threeStateToggle": true,
-  "diffEditor.renderSideBySide": false,
-  "editor.accessibilitySupport": "off",
-  "workbench.statusBar.visible": true,
-  "workbench.list.openMode": "doubleClick",
-  "explorer.autoReveal": false,
-  "restructuredtext.linter.run": "onSave",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook",
-    "*.mov": "default"
-  },
-  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
-  "around.pairs": {
-    "(": ["(", ")"],
-    "{": ["{", "}"],
-    "<": ["<", ">"],
-    "[": ["[", "]"]
-  },
-  "workbench.editor.showTabs": "multiple",
-  "magit.display-buffer-function": "same-column",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "jupyter.askForKernelRestart": false,
-  "[plaintext]": {
-    "editor.wordBasedSuggestions": "off",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
-  },
-  "[restructuredtext]": {
-    "editor.wordBasedSuggestions": "off",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
-  },
-  "[markdown]": {
-    "editor.wordBasedSuggestions": "off",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
-  },
-  "redhat.telemetry.enabled": true,
-  "files.autoSave": "afterDelay",
-  "editor.cursorStyle": "line",
-  "editor.lineNumbers": "on",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "off",
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "[python]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "editor.detectIndentation": true,
-    "editor.wordBasedSuggestions": "off",
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "esbonio.server.enabled": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorTheme": "Visual Studio Light",
-  "python.terminal.activateEnvInCurrentTerminal": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.inlineSuggest.enabled": true,
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": ""
-  },
-  "terminal.integrated.tabs.location": "left",
-  "terminal.integrated.tabs.enabled": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "yaml": false
-  },
-  "python.analysis.indexing": true,
-  "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.useLibraryCodeForTypes": true,
-  "python.analysis.autoFormatStrings": true,
-  "python.analysis.enablePytestSupport": true,
-  "python.analysis.gotoDefinitionInStringLiteral": true,
-  "python.analysis.inlayHints.callArgumentNames": true,
+	"security.workspace.trust.enabled": false,
+	"workbench.colorTheme": "Default Light+",
+	"editor.minimap.enabled": false,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 1000,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/CVS": true,
+		".hypothesis": true,
+		".mypy_cache": true,
+		".pytest_cache": true
+	},
 	"python.analysis.exclude": [
-		"build",
+		"**/node_modules",
+		"**/__pycache__",
+		"**/.*",
+		"build/**",
+		"dist/**",
+	],
+	"python.analysis.ignore": [
 		".hypothesis",
-		".idea",
 		".mypy_cache",
 		".pytest_cache",
+		".vscode",
+		".idea",
 		".tox",
 		".nox",
-		".vscode",
-		"dist",
-		"scratch",
 	],
-  "debug.onTaskErrors": "abort",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "python.defaultInterpreterPath": "/Users/austin/.pyenv/shims/python",
-  "git.openRepositoryInParentFolders": "never",
-  "python.analysis.inlayHints.pytestParameters": true,
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "workbench.editor.empty.hint": "hidden",
-  "project-scopes.globalExclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "project-scopes.activeScope": "bullet_list",
-  "project-scopes.enabled": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "cmake.showOptionsMovedNotification": false,
-  "project-scopes.scopes": {
-    "base": {
-      "included": [],
-      "excluded": []
-    },
-  },
-  "[markdown][plaintext][python][restructuredtext]": {
-    "editor.wordBasedSuggestions": "off"
-  },
-  "window.zoomLevel": 1,
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.packageIndexDepths": [
-  
-    {
-      "name": "",
-      "depth": 3
-    },
-    {
-      "name": "sklearn",
-      "depth": 2
-    },
-    {
-      "name": "matplotlib",
-      "depth": 2
-    },
-    {
-      "name": "scipy",
-      "depth": 2
-    },
-    {
-      "name": "flask",
-      "depth": 2
-    },
-    {
-      "name": "fastapi",
-      "depth": 2
-    }
-  ],
-  "python.analysis.userFileIndexingLimit": 20000,
-  "cmake.configureOnOpen": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "editor.inlayHints.enabled": "offUnlessPressed",
-  "git.ignoreMissingGitWarning": true,
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "evenBetterToml.schema.enabled": false,
-  "demonstrable.autoUpdateLanguageServer": false,
-  "github.copilot.editor.enableAutoCompletions": true,
-  "emmet.includeLanguages": {
-    "jinja-html": "html"
-  },
-  "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.includeLanguages": {
-    "jinja-html": "html",
-    "python": "html"
-  },
-  "tailwindCSS.classAttributes": [
-    "class",
-    "className",
-    "ngClass",
-    "class:list",
-    "klass"
-  ],
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "demonstrable.defaultResolution": "1024x768",
-  "demonstrable.defaultTheme": "tubetrain-light"
+	"python.analysis.indexing": true,
+	"python.analysis.inlayHints.variableTypes": true,
+	"python.analysis.useLibraryCodeForTypes": true,
+	"python.analysis.autoFormatStrings": true,
+	"python.analysis.enablePytestSupport": true,
+	"python.analysis.gotoDefinitionInStringLiteral": true,
+	"python.analysis.inlayHints.callArgumentNames": "all",
+	"python.analysis.typeCheckingMode": "basic",
+	"search.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true
+	},
+	"[python]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.detectIndentation": true,
+		"editor.wordBasedSuggestions": "off",
+		"editor.formatOnType": true,
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"[restructuredtext]": {
+		"editor.wordWrap": "on",
+	},
+	"editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_-",
+	"ruff.exclude": [
+		".mypy_cache",
+		".pytest_cache",
+		"build",
+		"scratch"
+	],
+	"demonstrable.defaultResolution": "1024x768",
+	"demonstrable.defaultTheme": "tubetrain-light",
+	"tailwindCSS.classAttributes": [
+		"class",
+		"className",
+		"ngClass",
+		"class:list",
+		"klass"
+	],
+	"tailwindCSS.includeLanguages": {
+		"jinja-html": "html",
+		"python": "javascript"
+	},
+	"tailwindCSS.emmetCompletions": true,
+	"emmet.includeLanguages": {
+		"jinja-html": "html"
+	},
+	"redhat.telemetry.enabled": true,
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"python.envFile": "",
+	"mypy-type-checker.args": [
+		"--enable-incomplete-feature=NewGenericSyntax"
+	],
+	"explorer.autoReveal": false,
+	"git.openRepositoryInParentFolders": "never",
+	"editor.inlayHints.enabled": "offUnlessPressed",
+
+	// This make line-navigation in vim mode work based on "display lines" (i.e. when wrapping is on).
+	// https://superuser.com/questions/1290030/vs-code-how-can-i-move-the-cursor-by-display-line-when-wrapping-in-vs-code 
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"j"
+			],
+			"after": [
+				"g",
+				"j"
+			]
+		},
+		{
+			"before": [
+				"k"
+			],
+			"after": [
+				"g",
+				"k"
+			]
+		}
+	],
+	"pygls.server.cwd": "${workspaceFolder}/examples/servers",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"makefile.configureOnOpen": false,
+	"project-scopes.globalExclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/CVS": true,
+		".hypothesis": true,
+		".mypy_cache": true,
+		".pytest_cache": true
+	},
+	"project-scopes.activeScope": "vscode",
+	"project-scopes.enabled": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"terminal.integrated.fontSize": 14,
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"zig.zls.enabled": "on",
 }

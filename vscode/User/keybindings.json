@@ -106,5 +106,9 @@
     "key": "alt+shift+u",
     "command": "moveStatement.moveStatementUp",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "project-scopes.switcher"
   }
 ]
